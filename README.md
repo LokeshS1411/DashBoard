@@ -22,3 +22,7 @@ This is a dashboard application built using **React.js**. It is a minimalistic p
 
    ```bash
    git clone https https://github.com/LokeshS1411/DashBoard.git
+
+#OutPut
+
+https://github.com/user-attachments/assets/8f285a1d-529c-4183-9e32-dd385d6ef9c4
