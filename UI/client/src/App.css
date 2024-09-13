@@ -1,0 +1,414 @@
+@import url('https://fonts.cdnfonts.com/css/tt-octosquares-trl');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'TT Octosquares Trl', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'today paid balance balance'
+        'task paid balance balance'
+        'fast effect api work'
+        'fast effect custom custom';
+    gap: 5px;
+    background-color: black;
+    color: white;
+    overflow: auto;
+    padding: 10px;
+}
+
+/* TODAY */
+.today {
+    grid-area: today;
+    background-color: rgb(75, 116, 166);
+    padding: 20px;
+    font-size: 15px;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+h4 {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.today h1 {
+    font-size: 70px;
+    margin-left: 20px;
+}
+
+/* TASK */
+.task {
+    grid-area: task;
+    background-color: rgb(61, 61, 61);
+    padding: 20px;
+    font-size: 15px;
+}
+
+.task h1 {
+    font-size: 70px;
+    margin-left: 20px;
+}
+
+/* PAID */
+.paid {
+    grid-area: paid;
+    background-color: rgb(61, 61, 61);
+    padding: 20px;
+    font-size: 15px;
+}
+
+.paid-down {
+    margin-top: 140px;
+}
+
+.med {
+    display: flex;
+    justify-content: space-between;
+}
+
+.down {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+/* BALANCE */
+.balance {
+    grid-area: balance;
+    background-color: rgb(61, 61, 61);
+    padding: 20px;
+}
+
+.balance-tit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.date {
+    display: flex;
+    margin-right: 10%;
+}
+
+.date p {
+    margin-left: 10px;
+}
+
+.total-balance {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.bar-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+}
+
+.bar {
+    width: 40px;
+    margin: 0 3px;
+    background-color: #4CAF50;
+    transition: background-color 0.3s ease;
+}
+
+.balance-total h1 {
+    font-size: 65px;
+}
+
+/* FAST */
+.fast {
+    grid-area: fast;
+    background-color: rgb(61, 61, 61);
+    padding: 20px;
+}
+
+.fast-down {
+    margin-top: 40px;
+}
+
+.fast h1 {
+    font-size: 70px;
+}
+
+.med1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 4px;
+    justify-content: center;
+}
+
+.images img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* EFFECT */
+.effect {
+    grid-area: effect;
+    background-color: rgb(75, 116, 166);
+    padding: 20px;
+}
+
+.effect-top h2 {
+    font-size: 30px;
+    margin-left: 30px;
+    position: relative;
+    top: 80px;
+}
+
+.effect-top p {
+    position: relative;
+    top: 100px;
+    left: 34px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.effect-circle {
+    display: flex;
+    position: relative;
+    top: 150px;
+    left: 40px;
+    gap: 30px;
+}
+
+.effect-circle h1 {
+    height: 10px;
+    width: 10px;
+    border: 2px double white;
+    border-radius: 50%;
+}
+
+/* API */
+.api {
+    grid-area: api;
+    background-color: rgb(61, 61, 61);
+    padding: 2%;
+}
+
+.use {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.use h3 {
+    margin-right: 20px;
+}
+
+/* WORK */
+.work {
+    grid-area: work;
+    background-color: rgb(61, 61, 61);
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(22, 71, 145) 0deg 270deg, rgb(91, 91, 91) 270deg 360deg);
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.circle h1 {
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-size: 60px;
+}
+
+.circle p {
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+}
+
+.inner-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 61);
+}
+
+/* CUSTOM */
+.custom {
+    grid-area: custom;
+    padding: 20px;
+    color: black;
+    background-color: rgb(201, 211, 155);
+    position: relative;
+
+}
+.custom-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.custom h3{
+    border-radius: 50%;
+    margin-left: 95%;
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        grid-template-areas:
+            'today today today balance'
+            'task task balance balance'
+            'fast effect effect work'
+            'fast effect effect custom';
+    }
+    
+    .custom {
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .custom h3 {
+        font-size: 25px; 
+        margin-bottom: 10px;
+    }
+
+    .custom h4 {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        grid-template-areas:
+            'today today today'
+            'task task task'
+            'balance balance balance'
+            'fast effect effect'
+            'api api api'
+            'work work work'
+            'custom custom custom';
+    }
+
+    .images {
+        grid-template-columns: repeat(2, 70px);
+    }
+
+    .balance-total h1 {
+        font-size: 50px;
+    }
+
+    .effect-top h2 {
+        font-size: 25px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle h1 {
+        font-size: 50px;
+    }
+
+    .custom {
+      
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .custom h3 {
+        font-size: 20px; 
+        margin-bottom: 5px; 
+    }
+    
+    .custom h4 {
+        display: none; /* Hide h4 in smaller viewports as well */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            'today'
+            'task'
+            'balance'
+            'fast'
+            'effect'
+            'api'
+            'work'
+            'custom';
+    }
+
+    .images {
+        grid-template-columns: repeat(1, 70px);
+    }
+
+    .balance-total h1 {
+        font-size: 40px;
+    }
+
+    .effect-top h2 {
+        font-size: 20px;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle h1 {
+        font-size: 40px;
+    }
+
+    .custom {
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .custom h3 {
+        font-size: 18px; 
+        margin-bottom: 5px; 
+    }
+    
+    .custom h4 {
+        display: none;
+    }
+}
