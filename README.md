@@ -21,5 +21,4 @@ This is a dashboard application built using **React.js**. It is a minimalistic p
 1. **Clone the repository** to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/simple-react-dashboard.git
-   cd simple-react-dashboard
+   git clone https https://github.com/LokeshS1411/DashBoard.git
